@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="form.css">
+    <title>magical world</title>
+</head>
+<body>
+    <Div class="container">
+    <form action="project.php" method="post">
+        <div class="user">
+        <div class="input">
+        <label for="name">NAME:</label>
+        <input id="name" type="text" name="name1" placeholder="enter your name" required>
+        </div>
+
+        <div class="input">
+        <label for="phone">PHONE:</label>
+        <input id="phone" type="text" name="phone1" placeholder="enter your phone" required>
+        </div>
+
+        <div class="input">
+        <label for="email">EMAIL:</label>
+        <input id="email" type="email" name="email1" placeholder="enter your email">
+        </div>
+
+        <div class="input">
+        <label for="n.individuals">N.INDIVIDUALS:</label>
+        <input id="n.individuals" type="text" name="individuals1" placeholder="enter number of individuals" required>
+        </div>
+
+        <div class="input">
+        <label for="date">DATE:</label>
+        <input id="date" type="date" name="date1" placeholder="enter date of travel" required>
+        </div>
+        <div class="input">
+            <label for="dropdown">CHOOSE PACKAGE:</label>
+            <select name="dropdown1"id ="dropdown">
+                <option value="0" selected disable>CHOOSE A TRIP</option>
+                <option value="maldives">maldives 30.000</option>
+                <option value="sawisland" >sawisland 40.000</option>
+                <option value="turkey">turkey 20.000</option>
+                <option value="italy">italy 25.000</option>
+                <option value="greece">greece 35.000</option>
+                <option value="london">london 15.000</option>
+                <option value="france">france 17.000</option>
+                <option value="bali">bali 19.000</option>
+                <option value="russia">russia 22.000</option>
+                <option value="thailand">thailand 32.000</option>
+                <option value="georgia">georgia 12.000</option>
+                <option value="holland">holland 27.000</option>
+                <option value="spain">spain 15.000</option>
+                <option value="poland">poland 19.000</option>
+                <option value="denmark">denmark 37.000</option>
+            </select>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="SEND" name="bntt" onclick="msg()">
+            </div>
+
+            <script>
+                function msg(){
+    var x= confirm("are you sure ?");
+    if(x==true){
+        alert("ok");
+    }
+    else{
+        alert(cansel);
+    }
+}
+
+
+            </script>
+
+    </form>
+
+
+
+       
+
+    </form>
+</Div>
+
+</body>
